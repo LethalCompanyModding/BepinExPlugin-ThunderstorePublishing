@@ -10,10 +10,10 @@ jobs:
     steps:
       # Use checkout to publish the files in your repo
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Dotnet
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v6
         with:
           dotnet-version: "8.x"
           cache: true
